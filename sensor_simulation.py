@@ -21,3 +21,13 @@ def simulate_stream(num_rows=50):
     data = [generate_sensor_data() for _ in range(num_rows)]
     df = pd.DataFrame(data)
     return df
+
+def preprocess_data(df):
+    df_clean = df.copy()
+    df_clean = df_clean.dropna()
+    df_clean['vibration_mm_s'] = df_clean['vibration_mm_s'].clip(0, 10)
+    df_clean['temperature_C'] = df_clean['temperature_C'].clip(20, 100)
+    df_clean['load_percent'] = df_clean['load_percent'].clip(0, 100)
+    df_clean['speed_m_s'] = df_clean['speed_m_s'].clip(0, 3)
+    df_clean['timestamp'] = pd.to_datetime(df_clean['timestamp'])
+    return df_clean

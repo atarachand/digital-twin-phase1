@@ -1,11 +1,15 @@
-# Conveyor Belt Digital Twin - Phase 1
+# Conveyor Belt Digital Twin - Phase 1 & 2
 
-This project simulates a digital twin for a conveyor belt using real-time sensor data such as vibration, temperature, load, and speed.
+This project simulates a digital twin for a conveyor belt with real-time sensor data.
 
-## Features
-- Real-time sensor simulation
-- Interactive Streamlit dashboard
-- Line plots for real-time data visualization
+## Phase 1:
+- Simulates vibration, temperature, load, and speed sensors
+- Live streaming in Streamlit
+
+## Phase 2:
+- Preprocessing (data cleaning, normalization)
+- Time-series visualization
+- Downloadable CSV of cleaned data
 
 ## Run Locally
 ```bash
@@ -14,7 +18,6 @@ streamlit run streamlit_app.py
 ```
 
 ## Deploy on Streamlit Cloud
-1. Push this repo to GitHub
-2. Go to https://streamlit.io/cloud
-3. Connect your GitHub repo
-4. Select `streamlit_app.py` as the entry point
+1. Push to GitHub
+2. Connect to Streamlit Cloud
+3. Use `streamlit_app.py` as the entry point
