@@ -1,26 +1,28 @@
-# Conveyor Belt Digital Twin - Phase 1 to 3
+# Conveyor Belt Digital Twin - Phase 1 to 4
 
-This project simulates a digital twin for a conveyor belt system.
+This full-stack simulation includes all 4 phases of a Digital Twin implementation for a Conveyor Belt.
 
-## Phase 1:
-- Simulate real-time sensor data (vibration, temperature, load, speed)
+## Phase 1: Sensor Simulation
+- Generate vibration, temperature, load, and speed values
 
-## Phase 2:
-- Preprocessing: clean and clip outliers
-- Time-series visualization
+## Phase 2: Preprocessing
+- Clean, clip, normalize
+- Visualize time series
 
-## Phase 3:
-- Anomaly Detection using Isolation Forest
-- Color-coded anomaly visualizations
-- ML model training on-the-fly
+## Phase 3: AI/ML Models
+- Anomaly Detection with Isolation Forest
 
-## Run Locally
+## Phase 4: Dashboard and 3D Twin
+- Real-time charts with Plotly
+- Embedded 3D model viewer (simulated using 3DViewer.net iframe)
+
+## How to Run
 ```bash
 pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
-## Deploy on Streamlit Cloud
+## Deploy Online
 1. Push to GitHub
-2. Deploy from https://streamlit.io/cloud
-3. Set `streamlit_app.py` as the main file
+2. Deploy on [Streamlit Cloud](https://streamlit.io/cloud)
+3. Use `streamlit_app.py` as the entry point
