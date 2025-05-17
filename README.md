@@ -1,30 +1,20 @@
-# Conveyor Belt Digital Twin - Phase 1 to 5
+# Conveyor Belt Digital Twin with AI
 
-## Phase 1: Sensor Simulation
-- Simulates vibration, temperature, load, and speed
+This system simulates a real-time conveyor belt monitoring station with:
 
-## Phase 2: Preprocessing
-- Data cleaning and clipping
-- Time-series visualization
+- Telemetry streaming
+- Fault injection
+- Autoencoder-based anomaly detection
+- LSTM-based RUL prediction
+- High-quality dashboard using Streamlit
 
-## Phase 3: ML Model
-- Anomaly detection using Isolation Forest
+## How to Run
 
-## Phase 4: Dashboard + 3D Viewer
-- Interactive visual dashboard with real-time plots
-- Embedded 3D visualization (simulated)
-
-## Phase 5: Simulation and Fault Injection
-- Inject synthetic faults: overheat, overload, imbalance
-- Observe model response and anomaly detection
-
-## Run Locally
 ```bash
 pip install -r requirements.txt
-streamlit run streamlit_app.py
+streamlit run dashboard_app.py
 ```
 
-## Deploy Online
-1. Push to GitHub
-2. Deploy via https://streamlit.io/cloud
-3. Use `streamlit_app.py` as the entry point
+## Deploy to Streamlit Cloud
+- Push to GitHub
+- Use `dashboard_app.py` as entry point
