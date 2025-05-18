@@ -1,20 +1,20 @@
-# Conveyor Belt Digital Twin with AI
+# Conveyor Belt Digital Twin - Phase 1
 
-This system simulates a real-time conveyor belt monitoring station with:
+This project simulates a digital twin for a conveyor belt using real-time sensor data such as vibration, temperature, load, and speed.
 
-- Telemetry streaming
-- Fault injection
-- Autoencoder-based anomaly detection
-- LSTM-based RUL prediction
-- High-quality dashboard using Streamlit
+## Features
+- Real-time sensor simulation
+- Interactive Streamlit dashboard
+- Line plots for real-time data visualization
 
-## How to Run
-
+## Run Locally
 ```bash
 pip install -r requirements.txt
-streamlit run dashboard_app.py
+streamlit run streamlit_app.py
 ```
 
-## Deploy to Streamlit Cloud
-- Push to GitHub
-- Use `dashboard_app.py` as entry point
+## Deploy on Streamlit Cloud
+1. Push this repo to GitHub
+2. Go to https://streamlit.io/cloud
+3. Connect your GitHub repo
+4. Select `streamlit_app.py` as the entry point
